@@ -9,6 +9,13 @@
 @implementation Restaurant
 @synthesize address, name, cuisineType, yearOpened;
 
+-(id)init{
+    self = [super init];
+    if(self){
+        
+    }
+    return self;
+}
 
 -(int)age
 {
