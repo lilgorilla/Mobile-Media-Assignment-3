@@ -59,17 +59,62 @@
     review4.score = 4;
     review4.numberOfHelpfulRatings = 14;
     review4.numberOfunhelpfulRatings = 5;
-    
 
     
+    Review* review5 = [[Review alloc] init];
+    review5.text = @"Nothing beats good southern breakfast of Fried Chicken 'n Waffles";
+    review5.reviewer = @"Michelle";
+    review5.score = 4;
+    review5.numberOfHelpfulRatings = 10;
+    review5.numberOfunhelpfulRatings = 2;
+    if ([restaurant averageCustomerReview]<1.7) {
+        star1.image = [UIImage imageNamed:@"Star_ON.png"];
+    }
+    if (1.7<[restaurant averageCustomerReview]<2.7) {
+        star1.image = [UIImage imageNamed:@"Star_ON.png"];
+        star2.image = [UIImage imageNamed:@"Star_ON.png"];
+    }
+    if (2.7<[restaurant averageCustomerReview]<3.7) {
+        star1.image = [UIImage imageNamed:@"Star_ON.png"];
+        star2.image = [UIImage imageNamed:@"Star_ON.png"];
+        star3.image = [UIImage imageNamed:@"Star_ON.png"];
+    }
+    if (3.7<[restaurant averageCustomerReview]<4.7) {
+        star1.image = [UIImage imageNamed:@"Star_ON.png"];
+        star2.image = [UIImage imageNamed:@"Star_ON.png"];
+        star3.image = [UIImage imageNamed:@"Star_ON.png"];
+        star4.image = [UIImage imageNamed:@"Star_ON.png"];
+    }
+    if ([restaurant averageCustomerReview] > 4.7) {
+        star1.image = [UIImage imageNamed:@"Star_ON.png"];
+        star2.image = [UIImage imageNamed:@"Star_ON.png"];
+        star3.image = [UIImage imageNamed:@"Star_ON.png"];
+        star4.image = [UIImage imageNamed:@"Star_ON.png"];
+        star5.image = [UIImage imageNamed:@"Star_ON.png"];
+    }
+
+    //adding reviews to the review array located in restaurant.
+    restaurant.reviews = [[NSMutableArray alloc] initWithObjects:review1, review2, review3, review4, nil];   
+    //restaurant.reviews =[addObject: review5];
+    
+    
+    //creating a best review to hold the return of the method in restaurant 
+    Review* bestReview = [restaurant mostHelpfulReview];
     
     reviewLabel.text = [review text];
     addressLabel.text = [restaurant address];
     navigationHeader.title = [restaurant name];
     cuisineLabel.text = [restaurant cuisineType];
     ageLabel.text = [NSString stringWithFormat:@"Est. %i (%i years ago)", restaurant.yearOpened, [restaurant age]];
-    helpfulReviewLabel.text = [NSString stringWithFormat:@" %@ --%@", review1.text, review1.reviewer];
-   helpfulReviewPercentageLabel.text = [NSString stringWithFormat:@"**Most helpful review -- %i of %i found this review helpful", review1.numberOfHelpfulRatings, [review1 totalReview]];
+   
+    if (bestReview.numberOfHelpfulRatings<5) {
+        helpfulReviewLabel.text = [NSString stringWithFormat:@"There are not enough ratings yet"];
+    }
+    if (bestReview.numberOfHelpfulRatings>=5) {
+        helpfulReviewLabel.text = [NSString stringWithFormat:@" %@ --%@", bestReview.text, bestReview.reviewer];
+    }
+
+    helpfulReviewPercentageLabel.text = [NSString stringWithFormat:@"**Most helpful review -- %i of %i found this review helpful", review1.numberOfHelpfulRatings, [review1 totalReview]];
     
     
 }

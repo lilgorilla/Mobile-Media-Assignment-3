@@ -12,19 +12,19 @@
 {
     NSString* reviewerName;
     NSString* text;
-
+    
     int score;
     int numberOfHelpfulRatings;
     int numberOfUnhelpfulRatings;
 }
 
 -(int) totalReview;
+-(float) helpfulPercentage;
 @property(readwrite, strong) NSString* text;
 @property(readwrite, strong) NSString* reviewer;
 @property(readwrite) int score;
 @property(readwrite) int numberOfHelpfulRatings;
 @property(readwrite) int numberOfunhelpfulRatings;
-@property(readwrite) NSArray* reviews;
 
 
 
