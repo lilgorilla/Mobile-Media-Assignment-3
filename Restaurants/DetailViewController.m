@@ -18,6 +18,7 @@
 @synthesize star3;
 @synthesize star4;
 @synthesize star5;
+@synthesize reviewLabel;
 
 #pragma mark - View lifecycle
 
@@ -31,42 +32,45 @@
     restaurant.cuisineType = @"Peruvian";
     restaurant.yearOpened = 1995;
 
-//    Review* review1 = [[Review alloc] init];
-//    review1.text = @"What fab-u-lass chicken! We could eat it all day if we didn't have to stop to drink sangria!";
-//    review1.reviewer = @"The Addams";
-//    review1.score = 5;
-//    review1.numberOfHelpfulReviews = 19;
-//    review1.numberOfUnhelpfulReviews = 8;
+    Review* review1 = [[Review alloc] init];
+    review1.text = @"What fab-u-lass chicken! We could eat it all day if we didn't have to stop to drink sangria!";
+    review1.reviewer = @"The Addams";
+    review1.score = 5;
+    review1.numberOfHelpfulRatings = 19;
+    review1.numberOfunhelpfulRatings = 8;
 //    
-//    Review* review2 = [[Review alloc] init];
-//    review2.text = @"I DONE POSTED ON DA INTARWEBS!";
-//    review2.reviewer = @"Anonymous";
-//    review2.score = 1;
-//    review2.numberOfHelpfulReviews = 0;
-//    review2.numberOfUnhelpfulReviews = 45;
+    Review* review2 = [[Review alloc] init];
+    review2.text = @"I DONE POSTED ON DA INTARWEBS!";
+    review2.reviewer = @"Anonymous";
+    review2.score = 1;
+    review2.numberOfHelpfulRatings = 0;
+    review2.numberOfunhelpfulRatings = 45;
 //    
-//    Review* review3 = [[Review alloc] init];
-//    review3.text = @"Some of the best chicken I've ever eaten. A helpful tip: get some green (Aji) sauce to go, they sell it by the pint!";
-//    review3.reviewer = @"Jim Carr";
-//    review3.score = 5;
-//    review3.numberOfHelpfulReviews = 28;
-//    review3.numberOfUnhelpfulReviews = 2;
+    Review* review3 = [[Review alloc] init];
+    review3.text = @"Some of the best chicken I've ever eaten. A helpful tip: get some green (Aji) sauce to go, they sell it by the pint!";
+    review3.reviewer = @"Jim Carr";
+    review3.score = 5;
+    review3.numberOfHelpfulRatings = 28;
+    review3.numberOfunhelpfulRatings = 2;
 //    
-//    Review* review4 = [[Review alloc] init];
-//    review4.text = @"While the food is amazing, they often simply don't pick up the phone when ordering out!";
-//    review4.reviewer = @"Paul";
-//    review4.score = 4;
-//    review4.numberOfHelpfulReviews = 14;
-//    review4.numberOfUnhelpfulReviews = 5;
+    Review* review4 = [[Review alloc] init];
+    review4.text = @"While the food is amazing, they often simply don't pick up the phone when ordering out!";
+    review4.reviewer = @"Paul";
+    review4.score = 4;
+    review4.numberOfHelpfulRatings = 14;
+    review4.numberOfunhelpfulRatings = 5;
     
 
     
     
-    
+    reviewLabel.text = [review text];
     addressLabel.text = [restaurant address];
     navigationHeader.title = [restaurant name];
     cuisineLabel.text = [restaurant cuisineType];
     ageLabel.text = [NSString stringWithFormat:@"Est. %i (%i years ago)", restaurant.yearOpened, [restaurant age]];
+    helpfulReviewLabel.text = [NSString stringWithFormat:@" %@ --%@", review1.text, review1.reviewer];
+   helpfulReviewPercentageLabel.text = [NSString stringWithFormat:@"**Most helpful review -- %i of %i found this review helpful", review1.numberOfHelpfulRatings, [review1 totalReview]];
+    
     
 }
 
@@ -85,6 +89,7 @@
     [self setStar3:nil];
     [self setStar4:nil];
     [self setStar5:nil];
+    [self setReviewLabel:nil];
     [super viewDidUnload];
 }
 
