@@ -8,12 +8,11 @@
 
 @interface Restaurant : NSObject
 { 
-    
+    NSMutableArray *reviews;
     NSString* address;
     NSString* name;
     NSString* cuisineType;
     int yearOpened;
-    NSMutableArray *reviews;
     
     Review* bestReview;
 }

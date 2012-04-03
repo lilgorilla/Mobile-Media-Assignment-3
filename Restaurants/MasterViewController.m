@@ -5,9 +5,10 @@
 //
 
 #import "MasterViewController.h"
+#import "Restaurant.h"
 
 @implementation MasterViewController
-
+@synthesize restaurants;
 
 - (void)awakeFromNib
 {
@@ -25,6 +26,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    MasterViewController* controller = [[MasterViewController alloc] init];
     Restaurant* piopio = [[Restaurant alloc] init];
     
     piopio.name = @"Pio Pio";
@@ -32,6 +34,8 @@
     piopio.cuisineType = @"Peruvian";
     piopio.yearOpened = 1995;
     
+    controller.restaurants = [[NSMutableArray alloc] initWithObjects: piopio, nil];   
+
     Review* review1 = [[Review alloc] init];
     review1.text = @"What fab-u-lass chicken! We could eat it all day if we didn't have to stop to drink sangria!";
     review1.reviewer = @"The Addams";
