@@ -19,6 +19,7 @@
 @synthesize star4;
 @synthesize star5;
 @synthesize reviewLabel;
+@synthesize restaurant;
 
 #pragma mark - View lifecycle
 

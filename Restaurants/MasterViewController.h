@@ -6,6 +6,7 @@
 
 #import <UIKit/UIKit.h>
 #import "Restaurant.h"
+#import "DetailViewController.h"
 
 @interface MasterViewController : UITableViewController
 {

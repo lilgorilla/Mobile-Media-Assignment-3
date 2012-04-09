@@ -122,9 +122,17 @@
 {
     NSString* cellIdentifier = @"RestaurantCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
-    cell.textLabel.text = @"Pio Pio";
-    cell.detailTextLabel.text = @"Peruvian";
+    Restaurant* currentRestaurant = [restaurants objectAtIndex:indexPath.row];
+    cell.textLabel.text = currentRestaurant.name;
+    cell.detailTextLabel.text = currentRestaurant.cuisineType;
     return cell;
+}
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    DetailViewController* detailVC = (DetailViewController*)[segue destinationViewController];
+    UITableView* table = [self tableView];
+    NSIndexPath* indexPath = [table indexPathForSelectedRow];
+    Restaurant* currentRestaurant = [restaurants objectAtIndex:indexPath.row];
+    detailVC.restaurant = currentRestaurant;
 }
 
 /*
