@@ -1,0 +1,88 @@
+// !$*UTF8*$!
+{
+	0EE5A6C614BEB490006BB5E1 /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 7C46DC7F1533043D0098DC88 /* Restaurants */;
+		activeTarget = 0EE5A6CE14BEB490006BB5E1 /* Restaurants */;
+		codeSenseManager = 7C46DC8F153304440098DC88 /* Code sense */;
+		executables = (
+			7C46DC7F1533043D0098DC88 /* Restaurants */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					356,
+					20,
+					48.16259765625,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 355664957;
+			PBXWorkspaceStateSaveDate = 355664957;
+		};
+		sourceControlManager = 7C46DC8E153304440098DC88 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	0EE5A6CE14BEB490006BB5E1 /* Restaurants */ = {
+		activeExec = 0;
+		executables = (
+			7C46DC7F1533043D0098DC88 /* Restaurants */,
+		);
+	};
+	7C46DC7F1533043D0098DC88 /* Restaurants */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = Restaurants;
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	7C46DC8E153304440098DC88 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	7C46DC8F153304440098DC88 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+}
