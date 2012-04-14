@@ -158,7 +158,7 @@
 		0EE5A6C614BEB490006BB5E1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0430;
 			};
 			buildConfigurationList = 0EE5A6C914BEB490006BB5E1 /* Build configuration list for PBXProject "Restaurants" */;
 			compatibilityVersion = "Xcode 3.2";

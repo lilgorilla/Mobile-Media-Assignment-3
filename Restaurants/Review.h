@@ -18,15 +18,13 @@
     int numberOfUnhelpfulRatings;
 }
 
--(int) totalReview;
--(float) helpfulPercentage;
 @property(readwrite, strong) NSString* text;
 @property(readwrite, strong) NSString* reviewer;
 @property(readwrite) int score;
 @property(readwrite) int numberOfHelpfulRatings;
 @property(readwrite) int numberOfunhelpfulRatings;
 
-
-
+-(float)helpfulPercentage;
+-(int)totalReviewRating;
 
 @end

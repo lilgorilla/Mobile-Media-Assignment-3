@@ -28,7 +28,7 @@
     int ratingCount;    
     for (int i=0; i< reviews.count; i++) 
     {
-        Review* review = [reviews objectAtIndex:i];
+        Review* review = [reviews objectAtIndex: i ];
         if (review.numberOfHelpfulRatings > 5) {
             if (review.numberOfHelpfulRatings > ratingCount) 
             {
@@ -40,11 +40,13 @@
     }
     return bestReview;
 }
+//--------------------------------------------------------------
+
 -(float)averageCustomerReview
 {
     float reviewAvgTotal;
     float reviewAvg;
-    for (int i=0; i< reviews.count; i++) 
+    for (int i=0; i < reviews.count; i++) 
     {
         reviewAvgTotal += i;
     }
@@ -52,6 +54,21 @@
     return reviewAvg;
     
 }
+//--------------------------------------------------------------
+
+-(int) totalReview    
+{
+    int totalReviewCount;
+    for (int i=0; i< reviews.count; i++) 
+    {
+        Review* review = [reviews objectAtIndex: i ];
+        totalReviewCount = totalReviewCount + review.totalReviewRating;
+    }
+    return totalReviewCount;
+}
+
+//--------------------------------------------------------------
+
 
 
 @end

@@ -20,19 +20,17 @@
     }
     return self;
 }
-//--------------------------------------------------------------
--(int) totalReview    
-{
-    int totalReviewCount;
-    totalReviewCount = numberOfHelpfulRatings + numberOfUnhelpfulRatings;
-    return totalReviewCount;
+-(float)helpfulPercentage{
+
+        float percentage;
+        percentage = numberOfHelpfulRatings/ (numberOfHelpfulRatings + numberOfunhelpfulRatings);
+        return percentage;
+
 }
-//--------------------------------------------------------------
--(float) helpfulPercentage
-{
-    int percentage;
-    percentage = numberOfHelpfulRatings/numberOfUnhelpfulRatings;
-    return percentage;
+
+-(int)totalReviewRating{
+    int totalReviewRatings = numberOfHelpfulRatings + numberOfunhelpfulRatings;
+    return totalReviewRatings;
 }
 
 @end

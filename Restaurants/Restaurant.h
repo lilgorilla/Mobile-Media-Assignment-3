@@ -25,6 +25,7 @@
 @property(readwrite, strong) Review* bestReview;
 
 -(int)age;
+-(int)totalReview;
 -(Review*) mostHelpfulReview;
 -(float) averageCustomerReview;
 

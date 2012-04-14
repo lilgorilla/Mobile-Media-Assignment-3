@@ -26,15 +26,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    MasterViewController* controller = [[MasterViewController alloc] init];
     Restaurant* piopio = [[Restaurant alloc] init];
     
     piopio.name = @"Pio Pio";
     piopio.address = @"746 First Avenue\nNew York, NY 10128";
     piopio.cuisineType = @"Peruvian";
-    piopio.yearOpened = 1995;
-    
-    controller.restaurants = [[NSMutableArray alloc] initWithObjects: piopio, nil];   
+    piopio.yearOpened = 1995; 
 
     Review* review1 = [[Review alloc] init];
     review1.text = @"What fab-u-lass chicken! We could eat it all day if we didn't have to stop to drink sangria!";
@@ -64,7 +61,6 @@
     review4.numberOfHelpfulRatings = 14;
     review4.numberOfunhelpfulRatings = 5;
     
-    
     Review* review5 = [[Review alloc] init];
     review5.text = @"Nothing beats good southern breakfast of Fried Chicken 'n Waffles";
     review5.reviewer = @"Michelle";
@@ -77,9 +73,33 @@
     piopio.reviews = [[NSMutableArray alloc] initWithObjects:review1, review2, review3, review4, nil];   
     //restaurant.reviews =[addObject: review5];
     
-
+    Restaurant* no7 = [[Restaurant alloc] init];
+    no7.name = @"No. 7";
+    no7.address = @"Fort Greene, Brooklyn";
+    no7.cuisineType = @"Experimental American";
+    no7.yearOpened = 2001;
+    
+    self.restaurants = [[NSMutableArray alloc] initWithObjects: piopio, no7, nil];
+    
+    Review* no7Review1 = [[Review alloc] init];
+    no7Review1.text = @"Delicious!";
+    no7Review1.reviewer = @"Bart";
+    no7Review1.score = 5;
+    no7Review1.numberOfHelpfulRatings = 10;
+    no7Review1.numberOfunhelpfulRatings = 0;
+    
+    Review* no7Review2 = [[Review alloc] init];
+    no7Review2.text = @"I love the fried broccoli with hoisin dippin sauce. Divine!";
+    no7Review2.reviewer = @"Reagan Nixon";
+    no7Review2.score = 4.5;
+    no7Review2.numberOfHelpfulRatings = 6;
+    no7Review2.numberOfunhelpfulRatings = 1;
+    
+    no7.reviews = [[NSMutableArray alloc] initWithObjects: no7Review1, no7Review2, nil];
  
 }
+
+
 
 - (void)viewDidUnload
 {

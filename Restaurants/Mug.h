@@ -15,5 +15,7 @@
     BOOL isClean;
 }
 @property(readwrite) BOOL isClean;
+
 -(void) addLiquid:(float)amountOfLiquidToAdd;
+
 @end

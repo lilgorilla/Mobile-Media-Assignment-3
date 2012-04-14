@@ -11,8 +11,8 @@
 @interface DetailViewController : UIViewController
 {
     Restaurant* restaurant;
-    Review* review;
 }
+
 
 @property (weak, nonatomic) IBOutlet UILabel *addressLabel;
 @property (weak, nonatomic) IBOutlet UINavigationItem *navigationHeader;
@@ -28,5 +28,6 @@
 @property (weak, nonatomic) IBOutlet UIImageView *star5;
 @property (weak, nonatomic) IBOutlet UILabel *reviewLabel;
 @property(readwrite, strong) Restaurant* restaurant;
+
 
 @end

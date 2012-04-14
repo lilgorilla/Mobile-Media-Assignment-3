@@ -27,7 +27,6 @@
 {
     [super viewDidLoad];
     
-    reviewLabel.text = [review text];
     addressLabel.text = [restaurant address];
     navigationHeader.title = [restaurant name];
     cuisineLabel.text = [restaurant cuisineType];
@@ -68,9 +67,10 @@
     }
     if (bestReview.numberOfHelpfulRatings>=5) {
         helpfulReviewLabel.text = [NSString stringWithFormat:@" %@ --%@", bestReview.text, bestReview.reviewer];
+            helpfulReviewPercentageLabel.text = [NSString stringWithFormat:@"**Most helpful review -- %i of %i found this review helpful", bestReview.numberOfHelpfulRatings, [restaurant totalReview]];
     }
     
-    helpfulReviewPercentageLabel.text = [NSString stringWithFormat:@"**Most helpful review -- %i of %i found this review helpful", review.numberOfHelpfulRatings, [review totalReview]];
+
 }
 
 
