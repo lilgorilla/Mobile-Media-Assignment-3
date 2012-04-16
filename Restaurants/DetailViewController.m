@@ -67,7 +67,7 @@
     }
     if (bestReview.numberOfHelpfulRatings>=5) {
         helpfulReviewLabel.text = [NSString stringWithFormat:@" %@ --%@", bestReview.text, bestReview.reviewer];
-            helpfulReviewPercentageLabel.text = [NSString stringWithFormat:@"**Most helpful review -- %i of %i found this review helpful", bestReview.numberOfHelpfulRatings, [restaurant totalReview]];
+            helpfulReviewPercentageLabel.text = [NSString stringWithFormat:@"**Most helpful review -- %i of %i found this review helpful", bestReview.numberOfHelpfulRatings, bestReview.numberOfunhelpfulRatings + bestReview.numberOfHelpfulRatings];
     }
     
 

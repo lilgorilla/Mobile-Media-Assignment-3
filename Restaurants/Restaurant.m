@@ -59,11 +59,9 @@
 -(int) totalReview    
 {
     int totalReviewCount;
-    for (int i=0; i< reviews.count; i++) 
-    {
-        Review* review = [reviews objectAtIndex: i ];
-        totalReviewCount = totalReviewCount + review.totalReviewRating;
-    }
+
+    totalReviewCount = bestReview.numberOfHelpfulRatings + bestReview.numberOfunhelpfulRatings;
+
     return totalReviewCount;
 }
 
