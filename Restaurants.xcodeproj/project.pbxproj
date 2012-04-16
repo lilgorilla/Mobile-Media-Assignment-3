@@ -14,14 +14,14 @@
 		0EE5A6D414BEB490006BB5E1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EE5A6D314BEB490006BB5E1 /* UIKit.framework */; };
 		0EE5A6D614BEB490006BB5E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EE5A6D514BEB490006BB5E1 /* Foundation.framework */; };
 		0EE5A6D814BEB490006BB5E1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EE5A6D714BEB490006BB5E1 /* CoreGraphics.framework */; };
-		0EE5A6DE14BEB490006BB5E1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0EE5A6DC14BEB490006BB5E1 /* InfoPlist.strings */; };
 		0EE5A6E014BEB490006BB5E1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE5A6DF14BEB490006BB5E1 /* main.m */; };
 		0EE5A6E414BEB490006BB5E1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE5A6E314BEB490006BB5E1 /* AppDelegate.m */; };
-		0EE5A6E714BEB491006BB5E1 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EE5A6E514BEB491006BB5E1 /* MainStoryboard.storyboard */; };
 		0EE5A6EA14BEB491006BB5E1 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE5A6E914BEB491006BB5E1 /* MasterViewController.m */; };
 		0EE5A6ED14BEB491006BB5E1 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE5A6EC14BEB491006BB5E1 /* DetailViewController.m */; };
 		7C1722FE15059AB100DDB0A5 /* Review.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C1722FD15059AB100DDB0A5 /* Review.m */; };
 		7C319D48153CAC1D004BF2A3 /* ReviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C319D47153CAC1D004BF2A3 /* ReviewViewController.m */; };
+		7C368CE3153CE63700E1E119 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C368CE1153CE63700E1E119 /* MainStoryboard.storyboard */; };
+		7C368CE6153CE64000E1E119 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7C368CE4153CE64000E1E119 /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,20 +36,20 @@
 		0EE5A6D514BEB490006BB5E1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0EE5A6D714BEB490006BB5E1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		0EE5A6DB14BEB490006BB5E1 /* Restaurants-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Restaurants-Info.plist"; sourceTree = "<group>"; };
-		0EE5A6DD14BEB490006BB5E1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0EE5A6DF14BEB490006BB5E1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = main.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		0EE5A6E114BEB490006BB5E1 /* Restaurants-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Restaurants-Prefix.pch"; sourceTree = "<group>"; };
 		0EE5A6E214BEB490006BB5E1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = AppDelegate.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		0EE5A6E314BEB490006BB5E1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = AppDelegate.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		0EE5A6E614BEB491006BB5E1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		0EE5A6E814BEB491006BB5E1 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = MasterViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		0EE5A6E914BEB491006BB5E1 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = MasterViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		0EE5A6EB14BEB491006BB5E1 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = DetailViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		0EE5A6EC14BEB491006BB5E1 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = DetailViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		7C1722FC15059AB100DDB0A5 /* Review.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Review.h; sourceTree = "<group>"; };
 		7C1722FD15059AB100DDB0A5 /* Review.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Review.m; sourceTree = "<group>"; };
-		7C319D46153CAC1D004BF2A3 /* ReviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; path = ReviewViewController.h; sourceTree = "<group>"; };
+		7C319D46153CAC1D004BF2A3 /* ReviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReviewViewController.h; sourceTree = "<group>"; };
 		7C319D47153CAC1D004BF2A3 /* ReviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReviewViewController.m; sourceTree = "<group>"; };
+		7C368CE2153CE63700E1E119 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		7C368CE5153CE64000E1E119 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,10 +112,10 @@
 				7C319D47153CAC1D004BF2A3 /* ReviewViewController.m */,
 				0EE5A6E214BEB490006BB5E1 /* AppDelegate.h */,
 				0EE5A6E314BEB490006BB5E1 /* AppDelegate.m */,
-				0EE5A6E514BEB491006BB5E1 /* MainStoryboard.storyboard */,
 				0EE5A6E814BEB491006BB5E1 /* MasterViewController.h */,
 				0EE5A6E914BEB491006BB5E1 /* MasterViewController.m */,
 				0EE5A6EB14BEB491006BB5E1 /* DetailViewController.h */,
+				7C368CE1153CE63700E1E119 /* MainStoryboard.storyboard */,
 				0EE5A6EC14BEB491006BB5E1 /* DetailViewController.m */,
 				0E2AFF8414DE3F3600456523 /* Mug.h */,
 				0E2AFF8514DE3F3600456523 /* Mug.m */,
@@ -129,8 +129,8 @@
 		0EE5A6DA14BEB490006BB5E1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7C368CE4153CE64000E1E119 /* InfoPlist.strings */,
 				0EE5A6DB14BEB490006BB5E1 /* Restaurants-Info.plist */,
-				0EE5A6DC14BEB490006BB5E1 /* InfoPlist.strings */,
 				0EE5A6DF14BEB490006BB5E1 /* main.m */,
 				0EE5A6E114BEB490006BB5E1 /* Restaurants-Prefix.pch */,
 			);
@@ -187,10 +187,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0EE5A6DE14BEB490006BB5E1 /* InfoPlist.strings in Resources */,
-				0EE5A6E714BEB491006BB5E1 /* MainStoryboard.storyboard in Resources */,
 				0E6F215614F9FE0F004F682D /* Star_OFF.png in Resources */,
 				0E6F215714F9FE0F004F682D /* Star_ON.png in Resources */,
+				7C368CE3153CE63700E1E119 /* MainStoryboard.storyboard in Resources */,
+				7C368CE6153CE64000E1E119 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,20 +215,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0EE5A6DC14BEB490006BB5E1 /* InfoPlist.strings */ = {
+		7C368CE1153CE63700E1E119 /* MainStoryboard.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				0EE5A6DD14BEB490006BB5E1 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		0EE5A6E514BEB491006BB5E1 /* MainStoryboard.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0EE5A6E614BEB491006BB5E1 /* en */,
+				7C368CE2153CE63700E1E119 /* en */,
 			);
 			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		7C368CE4153CE64000E1E119 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7C368CE5153CE64000E1E119 /* en */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

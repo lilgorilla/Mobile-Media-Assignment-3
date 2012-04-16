@@ -22,6 +22,7 @@
 @synthesize reviewLabel;
 @synthesize restaurant;
 @synthesize showAllReviews;
+@synthesize bestReview;
 
 #pragma mark - View lifecycle
 
@@ -62,7 +63,7 @@
     }
     
     //creating a best review to hold the return of the method in restaurant 
-    Review* bestReview = [restaurant mostHelpfulReview];
+    bestReview = [restaurant mostHelpfulReview];
 
     if (bestReview.numberOfHelpfulRatings<5) {
         helpfulReviewLabel.text = [NSString stringWithFormat:@"There are not enough ratings yet"];
@@ -80,6 +81,8 @@
     ReviewViewController* reviewVC = (ReviewViewController*)[segue destinationViewController];
     
     reviewVC.restaurant = restaurant;
+    
+    reviewVC.bestReview = bestReview;
 
 }
 

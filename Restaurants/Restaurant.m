@@ -7,7 +7,7 @@
 #import "Review.h"
 
 @implementation Restaurant
-@synthesize address, name, cuisineType, yearOpened, reviews, bestReview;
+@synthesize address, name, cuisineType, yearOpened, reviews, bestReview, isFavorite;
 
 -(id)init{
     self = [super init];
@@ -48,7 +48,9 @@
     float reviewAvg;
     for (int i=0; i < reviews.count; i++) 
     {
-        reviewAvgTotal += i;
+        Review* review = [reviews objectAtIndex: i ];
+
+        reviewAvgTotal += review.score;
     }
     reviewAvg = reviewAvgTotal/reviews.count;
     return reviewAvg;

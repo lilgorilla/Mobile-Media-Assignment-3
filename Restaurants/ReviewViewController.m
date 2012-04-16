@@ -10,6 +10,7 @@
 
 @implementation ReviewViewController
 @synthesize restaurant;
+@synthesize bestReview;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -64,6 +65,10 @@
     UILabel* reviewTextLabel = (UILabel*)[cell viewWithTag:1];
     UILabel* reviewHelpfulnessLabel = (UILabel*)[cell viewWithTag:2];
     Review* reviewForIndexPath = [restaurant.reviews objectAtIndex:indexPath.row];
+ 
+    if (reviewForIndexPath == bestReview) {
+
+    }
     reviewTextLabel.text = reviewForIndexPath.text;
     reviewHelpfulnessLabel.text = [NSString stringWithFormat:@"%i of %i found this review helpful", reviewForIndexPath.numberOfHelpfulRatings,reviewForIndexPath.numberOfHelpfulRatings + reviewForIndexPath.numberOfunhelpfulRatings];
     return cell;

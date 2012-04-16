@@ -14,6 +14,8 @@
     NSString* cuisineType;
     int yearOpened;
     
+    bool isFavorite;
+    
     Review* bestReview;
 }
 @property(readwrite, strong) NSMutableArray* reviews;
@@ -21,6 +23,7 @@
 @property(readwrite, strong) NSString* name;
 @property(readwrite, strong) NSString* cuisineType;
 @property(readwrite) int yearOpened;
+@property(readwrite) bool isFavorite;
 
 @property(readwrite, strong) Review* bestReview;
 
