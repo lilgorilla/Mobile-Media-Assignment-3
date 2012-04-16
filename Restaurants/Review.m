@@ -25,7 +25,6 @@
         float percentage;
         percentage = numberOfHelpfulRatings/ (numberOfHelpfulRatings + numberOfunhelpfulRatings);
         return percentage;
-
 }
 
 -(int)totalReviewRating{

@@ -5,6 +5,7 @@
 //
 
 #import "DetailViewController.h"
+#import "ReviewViewController.h"
 
 @implementation DetailViewController
 @synthesize addressLabel;
@@ -20,6 +21,7 @@
 @synthesize star5;
 @synthesize reviewLabel;
 @synthesize restaurant;
+@synthesize showAllReviews;
 
 #pragma mark - View lifecycle
 
@@ -74,6 +76,12 @@
 }
 
 
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    ReviewViewController* reviewVC = (ReviewViewController*)[segue destinationViewController];
+    
+    reviewVC.restaurant = restaurant;
+
+}
 
 - (void)viewDidUnload
 {
@@ -89,6 +97,7 @@
     [self setStar4:nil];
     [self setStar5:nil];
     [self setReviewLabel:nil];
+    [self setShowAllReviews:nil];
     [super viewDidUnload];
 }
 
