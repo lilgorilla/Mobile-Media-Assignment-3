@@ -22,6 +22,7 @@
 @synthesize reviewLabel;
 @synthesize restaurant;
 @synthesize showAllReviews;
+@synthesize favoriteButton;
 @synthesize bestReview;
 
 #pragma mark - View lifecycle
@@ -72,8 +73,9 @@
         helpfulReviewLabel.text = [NSString stringWithFormat:@" %@ --%@", bestReview.text, bestReview.reviewer];
             helpfulReviewPercentageLabel.text = [NSString stringWithFormat:@"**Most helpful review -- %i of %i found this review helpful", bestReview.numberOfHelpfulRatings, bestReview.numberOfunhelpfulRatings + bestReview.numberOfHelpfulRatings];
     }
-    
-
+    if (restaurant.isFavorite) {
+        favoriteButton.image = [UIImage imageNamed:@"heart_selected.png"];
+    }
 }
 
 
@@ -81,7 +83,6 @@
     ReviewViewController* reviewVC = (ReviewViewController*)[segue destinationViewController];
     
     reviewVC.restaurant = restaurant;
-    
     reviewVC.bestReview = bestReview;
 
 }
@@ -101,8 +102,11 @@
     [self setStar5:nil];
     [self setReviewLabel:nil];
     [self setShowAllReviews:nil];
+    [self setFavoriteButton:nil];
+    [self setFavoriteButton:nil];
     [super viewDidUnload];
 }
+
 
 - (void)viewWillAppear:(BOOL)animated
 {
@@ -130,5 +134,14 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+- (IBAction)markAsFavorite:(id)sender {
+    if (restaurant.isFavorite == false) {
+        favoriteButton.image = [UIImage imageNamed:@"heart_selected.png"];
+        restaurant.isFavorite = true;
+    }else{
+        favoriteButton.image = [UIImage imageNamed:@"heart.png"];
+        restaurant.isFavorite = false;
+    }
 
+}
 @end

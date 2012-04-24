@@ -22,6 +22,8 @@
 		7C319D48153CAC1D004BF2A3 /* ReviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C319D47153CAC1D004BF2A3 /* ReviewViewController.m */; };
 		7C368CE3153CE63700E1E119 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C368CE1153CE63700E1E119 /* MainStoryboard.storyboard */; };
 		7C368CE6153CE64000E1E119 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7C368CE4153CE64000E1E119 /* InfoPlist.strings */; };
+		7C368CE9153CE7DE00E1E119 /* heart_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C368CE7153CE7DE00E1E119 /* heart_selected.png */; };
+		7C368CEA153CE7DE00E1E119 /* heart.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C368CE8153CE7DE00E1E119 /* heart.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,8 @@
 		7C319D47153CAC1D004BF2A3 /* ReviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReviewViewController.m; sourceTree = "<group>"; };
 		7C368CE2153CE63700E1E119 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		7C368CE5153CE64000E1E119 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7C368CE7153CE7DE00E1E119 /* heart_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart_selected.png; sourceTree = "<group>"; };
+		7C368CE8153CE7DE00E1E119 /* heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,8 @@
 		0E6F215314F9FDFC004F682D /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				7C368CE7153CE7DE00E1E119 /* heart_selected.png */,
+				7C368CE8153CE7DE00E1E119 /* heart.png */,
 				0E6F215414F9FE0F004F682D /* Star_OFF.png */,
 				0E6F215514F9FE0F004F682D /* Star_ON.png */,
 			);
@@ -191,6 +197,8 @@
 				0E6F215714F9FE0F004F682D /* Star_ON.png in Resources */,
 				7C368CE3153CE63700E1E119 /* MainStoryboard.storyboard in Resources */,
 				7C368CE6153CE64000E1E119 /* InfoPlist.strings in Resources */,
+				7C368CE9153CE7DE00E1E119 /* heart_selected.png in Resources */,
+				7C368CEA153CE7DE00E1E119 /* heart.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
